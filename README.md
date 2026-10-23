@@ -23,7 +23,7 @@ This is the fractional change of the price at time t from previous bar's close p
 $$\text{Return}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t -1]} - 1$$
 
 ### Logarithm Return 
-$$\text{lr}[t] = ln(\frac{\text{Prices}[t]}{\text[Prices[t - 1]]}}
+$$\text{lr}[t] = ln(\frac{\text{Prices}[t]}{\text[Prices[t - 1]]}}$$
 
 
 ## Maintainer
