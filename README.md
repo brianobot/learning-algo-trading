@@ -21,9 +21,7 @@ This the fractional change of the price at t from previous price; give by the fo
 
 ```markdown
 $$
-\begin{aligned}
 return[t] = prices[t] / prices[t - 1] - 1 \frac{prices[t]}{prices[t -1] - 1}
-\end{aligned}
 $$
 ```
 
