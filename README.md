@@ -17,10 +17,13 @@ This also ensures that there is no gap, no overlaps and no future leakage.
 
 
 ## Rate of Returns
-This the fractional change of the price at t from previous price; give by the formula
-
+### Simple Return
+This is the fractional change of the price at time t from previous bar's close price; give by the formula
 
 $$\text{Return}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t -1]} - 1$$
+
+### Logarithm Return 
+$$\text{lr}[t] = ln(\frac{\text{Prices}[t]}{\text[Prices[t - 1]]}}
 
 
 ## Maintainer
