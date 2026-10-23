@@ -19,9 +19,8 @@ This also ensures that there is no gap, no overlaps and no future leakage.
 ## Rate of Returns
 This the fractional change of the price at t from previous price; give by the formula
 
-```markdown
+
 $$\text{Return}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t -1]} - 1$$
-```
 
 
 ## Maintainer
