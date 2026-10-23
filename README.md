@@ -20,9 +20,7 @@ This also ensures that there is no gap, no overlaps and no future leakage.
 This the fractional change of the price at t from previous price; give by the formula
 
 ```markdown
-$$
-return[t] = \frac{prices[t]}{prices[t -1] - 1}
-$$
+$$\text{Return}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t -1]} - 1$$
 ```
 
 
