@@ -25,6 +25,8 @@ $$\text{Return}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t -1]} - 1$$
 ### Logarithm Return 
 $$\text{lr}[t] = ln(\frac{\text{Prices}[t]}{\text{Prices}[t - 1]})$$
 
+You can find python functions for getting the returns of a price series [here](calculating_returns.py)
+
 
 ## Maintainer
 Brian Obot <brianobot9@gmail.com>
