@@ -28,5 +28,14 @@ $$\text{lr}[t] = ln(\frac{\text{Prices}[t]}{\text{Prices}[t - 1]})$$
 You can find python functions for getting the returns of a price series [here](calculating_returns.py)
 
 
+## Moving Averages
+These are the first rolling values analysis of an asset price series
+
+- **Casual Moving Averages**: This is MA with the values up to <=t, basically it right edge is time t
+- **Centered Moving Averages**: This is MA with values around t, t-half and t+half, this includes look ahead for a time t and it only
+  used in cases where the full data is available already.
+
+- **A rolling Indicator** has no value until it's window is full, this phase is referred to as the warm up period.
+
 ## Maintainer
 Brian Obot <brianobot9@gmail.com>
