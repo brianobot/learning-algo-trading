@@ -37,5 +37,18 @@ These are the first rolling values analysis of an asset price series
 
 - **A rolling Indicator** has no value until it's window is full, this phase is referred to as the warm up period.
 
+## Momentum - Trend Strength
+This is the return from a particular lookback bar, unlike regular returns that takes the previous bar into consideration, the momentum
+takes some lookback bar into it's calculation
+
+$$\text{mom}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t - \text{lookback}]} - 1$$
+
+
+## RSI - Overbought/Oversold
+
+
+## Volatility
+
+
 ## Maintainer
 Brian Obot <brianobot9@gmail.com>
