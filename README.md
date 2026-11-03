@@ -46,6 +46,9 @@ $$\text{mom}[t] = \frac{\text{Prices}[t]}{\text{Prices}[t - \text{lookback}]} - 
 
 ## RSI - Overbought/Oversold
 
+$$\text{RS} = \frac{\text{avg_gain}}{\text{avg_loss}} $$
+
+$$\text{RSI} = 100 - \frac{100}{1 + \text{RS}} $$
 
 ## Volatility
 
