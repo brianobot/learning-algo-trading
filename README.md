@@ -51,7 +51,9 @@ $$\text{RS} = \frac{\text{avg_gain}}{\text{avg_loss}} $$
 $$\text{RSI} = 100 - \frac{100}{1 + \text{RS}} $$
 
 ## Volatility
+This is the standard deviation over the last N returns. This is the quantity risk is built on. Most stratedy take volatility to considering to decide on the size of a trade, bet less when the market is choppier in order to keep the risk per trade constant.
 
+it is always non-negative and zero for a flat series
 
 ## Maintainer
 Brian Obot <brianobot9@gmail.com>
