@@ -23,14 +23,12 @@ def get_rsi(prices: list[float], window):
 
 
 def get_volatility(prices: list[float], window):
-    out = []
+    out = [None] * len(prices)
     for t in range(len(prices)):
-        if t + 1 < window:
-            out.append(None)
-            continue
-        w = prices[t - window + 1: t + 1]
-        mean = sum(w)/ window
-        out.append((sum((x - mean) ** 2 for x in w) / window) ** 0.5)
+        if t + 1 >= window:
+            w = prices[t - window + 1: t + 1]
+            mean = sum(w)/ window
+            out[t] = (sum((x - mean) ** 2 for x in w) / window) ** 0.5
             
     return out
 
