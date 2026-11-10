@@ -55,5 +55,15 @@ This is the standard deviation over the last N returns. This is the quantity ris
 
 it is always non-negative and zero for a flat series
 
+
+## Crossovers: 
+This compares two features. it state matters in two edge cases
+
+## Cross events: 
+The bar where the signal changes from the previous bar (signal[t] != signal[t-1]), they are the entry and exit event.
+this are the moment trade are placed and then holds onto the next change, this ensures that trading does not happen on every bar that
+the signal is non-zero. holding a long bar across ten bars is one entry not ten. the number of change events is the signal's `turnover`
+
+
 ## Maintainer
 Brian Obot <brianobot9@gmail.com>
