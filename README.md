@@ -65,5 +65,14 @@ this are the moment trade are placed and then holds onto the next change, this e
 the signal is non-zero. holding a long bar across ten bars is one entry not ten. the number of change events is the signal's `turnover`
 
 
+## Position Sizing:
+this refers to the amount of a traders balance risked on a trade, there are broadly 2 approach to choosing this amount
+- Fixed Fraction: A fixed fraction of the portfolio balanced it risked per trade, this grows and shrinks with the account size
+- Violatility Target: The amount risked per trade is dependent on the current market violatility, the less volatile a market is, the more is risked and vice versa, this has to be combined with a capped value to avoid over risking in a market that seems very calm
+
+## Equity Curve:
+This shows the equity growth of a series of trades (returns).
+
+
 ## Maintainer
 Brian Obot <brianobot9@gmail.com>

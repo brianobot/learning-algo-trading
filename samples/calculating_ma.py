@@ -1,5 +1,6 @@
 import random
-import numpy as np
+import numpy as np 
+from functools import partial
 import matplotlib.pyplot as plt
 
 
@@ -12,6 +13,10 @@ def get_sma(prices: list[float], window: int) -> list[None | float]:
             out.append(sum(prices[t - window + 1: t + 1]) / window)
             
     return out #type: ignore
+
+
+_fast = partial(get_sma, window=3)
+_slow = partial(get_sma, window=6)
 
 
 def get_ema(prices: list[float], span: int):
@@ -28,14 +33,17 @@ def crossover(fast, slow):
 
 
 if __name__ == "__main__":
-    prices = [random.random() * 100 for i in range(100)]
-    smas = [x if x else 0 for x in get_sma(prices, 3)]
+    span, interval = 100, 10
+    prices = [random.random() * 100 for i in range(span)]
+    fast_smas = [x if x else 0 for x in _fast(prices)]
+    slow_smas = [x if x else 0 for x in _slow(prices, )]
     emas = get_ema(prices, 3)
     crossovers = crossover(get_sma(prices, 3), get_sma(prices, 10))
 
     print(crossovers)
-    time = np.linspace(0, 10, 100)
+    time = np.linspace(0, interval, span)
     plt.plot(time, prices)
-    plt.plot(time, smas, color="red")
+    plt.plot(time, fast_smas, color="red")
+    plt.plot(time, slow_smas, color="blue")
     plt.plot(time, emas, color="green")
     plt.show()

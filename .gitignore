@@ -2,9 +2,5 @@
 
 !README.md
 !.gitignore
-!calculating_returns.py
-!calculating_ma.py
-!calculating_indicators.py
-!combining_indicators.py
-!signals_and_crossovers.py
-!calculating_position_and_size.py
+!samples/
+!samples/**

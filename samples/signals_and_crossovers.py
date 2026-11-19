@@ -3,6 +3,7 @@ import math
 from calculating_indicators import simulate_gbm, get_volatility, get_momentum, get_rsi
 import matplotlib.pyplot as plt
 
+
 def threshold_signal(indicator, lo, hi):
     out = []
     for v in indicator:
@@ -17,7 +18,7 @@ def _missing(x):
     return x is None or (isinstance(x, float) and math.isnan(x))
 
 
-def crossover_state(fast, slow):
+def crossover_state(fast: list[float], slow: list[float]):
     out, state = [], 0
     for f, s in zip(fast, slow):
         if _missing(f) or _missing(s):
